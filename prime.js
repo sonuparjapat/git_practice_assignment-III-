@@ -1,14 +1,11 @@
 function checkprime(num){
-let count=0;
-for (i=1; i<=num; i++){
-    if (num%i==0){
-     count=count++; 
-    }
-  }
-  if (count==2){
-      return true;
-  } 
-   return false;
+
+let factor=0;
+for (i=1;i<=num;i++){if (num%i==0){
+factor=factor+1;}}
+if (factor==2){return true;}else {return false;}
+
+
 }
 
 let ans=checkprime(7);
